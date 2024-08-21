@@ -1,0 +1,234 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #333333;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.main-container {
+    width: 595px;
+    height: 842px;
+    background-color: white;
+    padding: 20px;
+    font-family: "Times New Roman", sans-serif;
+    overflow: hidden;
+}
+
+.person-name-text {
+    color: black;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.contact-info-div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.person-email-text, .person-phone-text {
+    font-size: 15px;
+}
+
+.left-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 400px;
+    gap: 50px;
+    justify-content: center;
+}
+
+.general-container, .educational-container, .practical-container {
+    width: 500px;
+    height: 50px;
+    background-color: #e3e3e3;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Tahoma, sans-serif;
+}
+
+.general-big-container, .educational-big-container, .practical-big-container {
+    width: 500px;
+    height: 300px;
+    background-color: #e3e3e3;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: Tahoma, sans-serif;
+    color: #333333;
+}
+
+.general-info-title, .educational-info-title, .practical-info-title {
+    color: #333333;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.right-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education-title-text {
+    font-size: 15px;
+}
+
+.edit-button {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 430px;
+    border: none;
+    background: none;
+    color: #333333;
+    font-size: 15px;
+}
+
+.edit-button:hover {
+    cursor: pointer;
+    color: #8f8f8f;
+}
+
+.general-big-container, .general-container, .educational-container, .educational-big-container, .practical-container, .practical-big-container {
+    overflow: hidden;
+    transition: height 0.5s ease;
+    height: 50px;
+}
+
+.general-big-container.edit-mode, .educational-big-container.edit-mode, .practical-big-container.edit-mode {
+    height: 300px;
+    padding: 10px;
+}
+
+.general-container.view-mode, .educational-container.view-mode, .practical-container.view-mode {
+    height: 50px;
+}
+
+.name-label, .school-label, .company-label {
+    margin-top: 20px;
+}
+
+#phoneField {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+}
+
+input[type='text'], input[type='email'] {
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+    padding: 5px;
+    max-width: 350px;
+}
+
+.date-div {
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+#startField, #endField {
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    padding: 5px;
+    max-width: 125px;
+    height: 30px;
+}
+
+.start-label, .end-label {
+    margin-top: 3px;
+}
+
+.educational-big-container.edit-mode {
+    height: 335px;
+    padding: 10px;
+}
+
+.practical-big-container.edit-mode {
+    height: 400px;
+    padding: 10px;
+}
+
+.education-info-div, .practical-info-div {
+    margin-top: 10px;
+}
+
+.edu-first-line, .practical-first-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.school-title, .company-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.start-end-date {
+    font-size: 16px;
+}
+
+.department-text, .degree-text, .position-title, .position-description {
+    font-size: 15px;
+    max-width: 500px;
+}
+
+.department-text, .position-title {
+    font-weight: bold;
+}
+
+.position-title {
+    margin-bottom: 5px;
+}
+
+.practical-title-text {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+#descField {
+    max-width: 100%;
+    font-size: 15px;
+    font-family: Tahoma;
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+    min-width: 200px;
+    min-height: 50px;
+}
+
+.save-button {
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.save-button:hover {
+    cursor: pointer;
+    background-color: #d5d5d5;
+}
